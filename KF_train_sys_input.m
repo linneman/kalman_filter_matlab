@@ -167,7 +167,8 @@ figure
 % subplot(2,1,2)
 plot(time_rate, Xtrue(2,:), 'b', 'LineWidth', 1.5);
 hold on;
-scatter(time_rate, Z_buffer(2,:), '+', 'k', 'LineWidth', 1.5);
+% scatter(time_rate, Z_buffer(2,:), '+', 'k', 'LineWidth', 1.5);
+scatter(time_rate, Z_buffer(2,:), [], '+');
 plot(time_rate, Xk_buffer(2,:), 'm--*', 'LineWidth', 1);
 plot(time_rate, movingAverage(2,:), 'r--d', 'LineWidth', 1);
 title('Velocity of one-dimentional train tracking example');

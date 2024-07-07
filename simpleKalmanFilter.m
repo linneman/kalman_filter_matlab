@@ -129,7 +129,8 @@ figure;
 subplot(2,1,1)
 plot(iteration, Xtrue, 'b', 'LineWidth', 1.5);
 hold on;
-scatter(iteration, Z_buffer, '+', 'k', 'LineWidth', 1.5);
+% scatter(iteration, Z_buffer, '+', 'k', 'LineWidth', 1.5);
+scatter(iteration, Z_buffer, [], '+');
 plot(iteration, Xk_buffer, 'm--*', 'LineWidth', 1);
 plot(iteration, movingAverage, 'r--d', 'LineWidth', 1);
 title('Kalman Filter Simulation for Votage Reading example');
